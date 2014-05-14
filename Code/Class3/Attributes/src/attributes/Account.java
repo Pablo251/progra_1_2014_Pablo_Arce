@@ -1,12 +1,18 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ *Name: Attributes.
+ 
+ *Information: Second exercise, creating a class. 
+ 
+ *Date: 14/5/2014.
+ 
+ *Copyright.
+  
  */
 package attributes;
 
 /**
  *
- * @author profe
+ * @author Jose Pablo Arce Cascante.
  */
 public class Account {
     //Variable declaration.
@@ -22,7 +28,7 @@ public class Account {
     
     /**
      * Este método sirve para aumentrar la cuanta de un usario.
-     *  @param monto Parámentro para recibir el nuebo monto 
+     *  @param monto Parámentro para recibir el nuevo monto. 
      */    
     public void DepositoMaximo(double monto)
     {
@@ -30,8 +36,8 @@ public class Account {
     }
     
     /**
-     * Este método sirve para disminuir la cuenta de un usaruio
-     * @param monto Pa´rametro para recibir el nuevo monto
+     * Este método sirve para disminuir la cuenta de un usaruio.
+     * @param monto Parámetro para recibir el nuevo monto.
      */   
     public void Retiro(double monto){
         if(getSaldoInicial() >= monto)
@@ -41,13 +47,15 @@ public class Account {
     }
 
     /**
-     * @return the saldoInicial
+     * Método get para saldoInicial.
+     * @return the saldoInicial.
      */
     public double getSaldoInicial() {
         return saldoInicial;
     }
 
     /**
+     * Método set para saldoInicial.
      * @param saldoInicial the saldoInicial to set
      */
     public void setSaldoInicial(double saldoInicial) {
@@ -55,6 +63,7 @@ public class Account {
     }
 
     /**
+     * Método hayError, muetra si hay un problema con los fondos.
      * @return the hayError
      */
     public boolean isHayError() {
@@ -62,6 +71,7 @@ public class Account {
     }
 
     /**
+     * Método set para hayError.
      * @param hayError the hayError to set
      */
     public void setHayError(boolean hayError) {
