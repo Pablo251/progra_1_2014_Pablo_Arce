@@ -81,6 +81,19 @@ public class Class10_Arrays {
                     System.out.println(oExercice3.SumaDePromedios());
                     break;
                 case 4:
+                    // Copy u.u
+                    Exercice4 oExercice4 = new Exercice4();
+                    for (int i = 0; i < 10; i++) {
+                        keyboard = new Scanner(System.in);
+                        System.out.println("Digite valor del vector 1 # " + (i + 1));
+                        oExercice4.AgregarVector(keyboard.nextInt());
+                    }
+                    boolean estado = oExercice4.EstaOrdenado();
+                    if (estado) {
+                        System.out.println("El vector esta ordenado :");
+                    } else {
+                        System.out.println("El vector esta desordenado:");
+                    }
                     break;
                 case 5://Exit.
                     option = 6;
