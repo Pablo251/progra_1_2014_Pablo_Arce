@@ -15,9 +15,11 @@ public class EjercicioString2 {
      */
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        StringUp oStringUp = new StringUp();
-        oStringUp.setHilera("hOla mUnDo");
-        System.out.println(oStringUp.Substring(2, 4));
-        System.out.println(oStringUp.toUpperCase());
+        
+        StringUp oStringUp=new StringUp();
+        oStringUp.setHilera("hOlA mUnDo");
+        System.out.println(oStringUp.SubString(2, 4));
+        System.out.println(oStringUp.toUpperCase()); 
     }
+    
 }

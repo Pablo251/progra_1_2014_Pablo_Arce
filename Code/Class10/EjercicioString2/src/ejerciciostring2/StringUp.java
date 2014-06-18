@@ -1,54 +1,56 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ *Name: Class10
+ 
+ *Information: This is the 10 class. 
+ 
+ *Date: 6/6/2014.
+ 
+ *Copyright.
+  
  */
 package ejerciciostring2;
 
 /**
  *
- * @author Estudiante
+ * @author Jose Pablo Arce Cascante
  */
-public class StringUp {
+public class StringUp
+{
+    private String hilera;
     
-    private String hilera="HoLa";
-    
-    public String SubString(int begin, int end) throws Exception
+    public String SubString(int begin,int end) throws Exception
     {
-                
-        String retorno="";
+        String retorno="";  
         
         if(end<begin)
         {
-            throw new Exception("Error el final no puede ser menor al inicio");
+            throw new Exception("Error el final no puede ser menor al inicio");  
         }
         if(getHilera().length()<0)
-        {  
-            throw new Exception("La hilera tiene que contener caracteres");
+        {
+            throw new Exception("La hilera tiene que contener caracteres"); 
         }
-
+         
         for (int i = begin-1; i < end; i++) {
             retorno+=getHilera().charAt(i);
-            
         }
-           return retorno;
-    }
+        return retorno;
+    } 
     
-    public String topUpperCase()
+    public String toUpperCase()
     {
         String retorno="";
         
-        String mayusculas="ABCDEFGHIJKLMNÑOPQRSTUWXYZ";
-        String minusculas="abcdefghijklmnñopqrstuwxyz";
-        
-        char temporal;
+        String mayusculas="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        String minusculas="abcdefghijklmnñopqrstuvwxyz";
+                
         int index=0;
         
         for (int i = 0; i < getHilera().length(); i++) {
-            //isLowerCase= es para minusculas, en este caso pregunta si los caracteres son minusculas
-            if( Character.isLowerCase(getHilera().charAt(i)))
+            if(Character.isLowerCase(getHilera().charAt(i)))
             {
-                index=minusculas.indexOf(getHilera().charAt(i));
-                retorno+=mayusculas.charAt(index);
+               index= minusculas.indexOf(getHilera().charAt(i));
+               retorno+=mayusculas.charAt(index);
             }
             else
             {
@@ -70,6 +72,5 @@ public class StringUp {
      */
     public void setHilera(String hilera) {
         this.hilera = hilera;
-    }
-    
+    }     
 }
